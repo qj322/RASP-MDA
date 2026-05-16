@@ -1,0 +1,206 @@
+{
+  "split_mode": "drug_scaffold",
+  "seed": 22,
+  "test_ratio": 0.2,
+  "train_neg_ratio": 1.0,
+  "test_neg_ratio": 1.0,
+  "counts": {
+    "train_pos": 4329,
+    "train_neg": 4329,
+    "test_pos": 1082,
+    "test_neg": 1082,
+    "train_pos_orig": 4329,
+    "train_neg_orig": 4329,
+    "test_pos_orig": 1082,
+    "test_neg_orig": 1082
+  },
+  "split_summary": {
+    "split_mode": "drug_scaffold",
+    "train_pos": 4329,
+    "test_pos": 1082,
+    "actual_test_ratio": 0.19996303825540565,
+    "train_mirna": 1242,
+    "test_mirna": 635,
+    "train_drug": 84,
+    "test_drug": 21,
+    "train_scaffold": 72,
+    "test_scaffold": 18,
+    "mirna_overlap": 560,
+    "drug_overlap": 0,
+    "scaffold_overlap": 0,
+    "train_neg": 4329,
+    "test_neg": 1082,
+    "train_neg_ratio": 1.0,
+    "test_neg_ratio": 1.0
+  },
+  "test_drugs": [
+    {
+      "new_id": 2,
+      "orig_id": 2,
+      "smiles": "CC\\C(=C(/C1=CC=CC=C1)C1=CC=C(OCCN(C)C)C=C1)C1=CC=CC=C1",
+      "scaffold": "C(=C(c1ccccc1)c1ccccc1)c1ccccc1",
+      "num_test_pos": 205,
+      "num_test_neg": 38
+    },
+    {
+      "new_id": 4,
+      "orig_id": 4,
+      "smiles": "NC1=NC(=O)N(C=C1)[C@@H]1O[C@H](CO)[C@@H](O)C1(F)F",
+      "scaffold": "O=c1ncccn1C1CCCO1",
+      "num_test_pos": 436,
+      "num_test_neg": 33
+    },
+    {
+      "new_id": 5,
+      "orig_id": 5,
+      "smiles": "CCCCCOC(=O)NC1=NC(=O)N(C=C1F)[C@@H]1O[C@H](C)[C@@H](O)[C@H]1O",
+      "scaffold": "O=c1ncccn1C1CCCO1",
+      "num_test_pos": 8,
+      "num_test_neg": 64
+    },
+    {
+      "new_id": 10,
+      "orig_id": 10,
+      "smiles": "CCCS(=O)(=O)NC1=CC=C(F)C(C(=O)C2=CNC3=C2C=C(Cl)C=N3)=C1F",
+      "scaffold": "O=C(c1ccccc1)c1c[nH]c2ncccc12",
+      "num_test_pos": 45,
+      "num_test_neg": 57
+    },
+    {
+      "new_id": 18,
+      "orig_id": 18,
+      "smiles": "[H][C@@]12N3CC[C@@]11C4=C(C=C(OC)C(=C4)[C@]4(C[C@H]5C[N@](C[C@](O)(CC)C5)CCC5=C4NC4=CC=CC=C54)C(=O)OC)N(C=O)[C@@]1([H])[C@](O)([C@H](OC(C)=O)[C@]2(CC)C=CC3)C(=O)OC",
+      "scaffold": "C1=CC2CCC3Nc4ccc(C5CC6CCCN(CCc7c5[nH]c5ccccc75)C6)cc4C34CCN(C1)C24",
+      "num_test_pos": 100,
+      "num_test_neg": 56
+    },
+    {
+      "new_id": 25,
+      "orig_id": 25,
+      "smiles": "CC(C)C[C@H](NC(=O)[C@H](CC1=CC=CC=C1)NC(=O)C1=CN=CC=N1)B(O)O",
+      "scaffold": "O=C(NCCc1ccccc1)c1cnccn1",
+      "num_test_pos": 31,
+      "num_test_neg": 45
+    },
+    {
+      "new_id": 30,
+      "orig_id": 30,
+      "smiles": "[H][C@]12COC(=O)[C@]1([H])[C@H](C1=CC(OC)=C(O)C(OC)=C1)C1=CC3=C(OCO3)C=C1[C@H]2O[C@@H]1O[C@]2([H])CO[C@@H](C)O[C@@]2([H])[C@H](O)[C@H]1O",
+      "scaffold": "O=C1OCC2C(OC3CCC4OCOCC4O3)c3cc4c(cc3C(c3ccccc3)C12)OCO4",
+      "num_test_pos": 78,
+      "num_test_neg": 51
+    },
+    {
+      "new_id": 31,
+      "orig_id": 31,
+      "smiles": "[H][C@@]1(C[C@@]2(O)[C@@H](OC(=O)C3=CC=CC=C3)[C@]3([H])[C@@]4(CO[C@@H]4C[C@H](O)[C@@]3(C)C(=O)[C@H](O)C(=C1C)C2(C)C)OC(C)=O)OC(=O)[C@H](O)[C@@H](NC(=O)OC(C)(C)C)C1=CC=CC=C1",
+      "scaffold": "O=C(CCc1ccccc1)OC1C=C2CC(=O)C3CCC4OCC4C3C(OC(=O)c3ccccc3)C(C2)C1",
+      "num_test_pos": 130,
+      "num_test_neg": 39
+    },
+    {
+      "new_id": 52,
+      "orig_id": 52,
+      "smiles": "NC1=NC(=O)N(C=C1)[C@@H]1O[C@H](CO)[C@@H](O)[C@@H]1O",
+      "scaffold": "O=c1ncccn1C1CCCO1",
+      "num_test_pos": 8,
+      "num_test_neg": 61
+    },
+    {
+      "new_id": 57,
+      "orig_id": 57,
+      "smiles": "N#CC1=CC=C(C=C1)C(N1C=NC=N1)C1=CC=C(C=C1)C#N",
+      "scaffold": "c1ccc(C(c2ccccc2)n2cncn2)cc1",
+      "num_test_pos": 1,
+      "num_test_neg": 55
+    },
+    {
+      "new_id": 66,
+      "orig_id": 66,
+      "smiles": "[H][N]([H])([H])[Pt]1(OC(=O)C2(CCC2)C(=O)O1)[N]([H])([H])[H]",
+      "scaffold": "O=C1[O][Pt][O]C(=O)C12CCC2",
+      "num_test_pos": 24,
+      "num_test_neg": 56
+    },
+    {
+      "new_id": 67,
+      "orig_id": 67,
+      "smiles": "CCC1=C2CN3C(=CC4=C(COC(=O)[C@]4(O)CC)C3=O)C2=NC2=CC=C(OC(=O)N3CCC(CC3)N3CCCCC3)C=C12",
+      "scaffold": "O=C1Cc2cc3n(c(=O)c2CO1)Cc1cc2cc(OC(=O)N4CCC(N5CCCCC5)CC4)ccc2nc1-3",
+      "num_test_pos": 5,
+      "num_test_neg": 54
+    },
+    {
+      "new_id": 68,
+      "orig_id": 68,
+      "smiles": "CN1C=NC2=C(F)C(NC3=C(Cl)C=C(Br)C=C3)=C(C=C12)C(=O)NOCCO",
+      "scaffold": "c1ccc(Nc2ccc3[nH]cnc3c2)cc1",
+      "num_test_pos": 1,
+      "num_test_neg": 46
+    },
+    {
+      "new_id": 69,
+      "orig_id": 69,
+      "smiles": "CC1=NC(NC2=NC=C(S2)C(=O)NC2=C(C)C=CC=C2Cl)=CC(=N1)N1CCN(CCO)CC1",
+      "scaffold": "O=C(Nc1ccccc1)c1cnc(Nc2cc(N3CCNCC3)ncn2)s1",
+      "num_test_pos": 2,
+      "num_test_neg": 56
+    },
+    {
+      "new_id": 76,
+      "orig_id": 76,
+      "smiles": "[H][C@@]12CC[C@](O)(C(=O)CO)[C@@]1(C)CC(=O)[C@@]1([H])[C@@]2([H])CCC2=CC(=O)CC[C@]12C",
+      "scaffold": "O=C1C=C2CCC3C4CCCC4CC(=O)C3C2CC1",
+      "num_test_pos": 1,
+      "num_test_neg": 49
+    },
+    {
+      "new_id": 84,
+      "orig_id": 84,
+      "smiles": "CN1CCN(CC1)C1=CC=C2N=C(NC2=C1)C1=C(N)C2=C(NC1=O)C=CC=C2F",
+      "scaffold": "O=c1[nH]c2ccccc2cc1-c1nc2ccc(N3CCNCC3)cc2[nH]1",
+      "num_test_pos": 1,
+      "num_test_neg": 54
+    },
+    {
+      "new_id": 88,
+      "orig_id": 88,
+      "smiles": "NC1=NC(=O)C2=C(NC=C2CCC2=CC=C(C=C2)C(=O)N[C@@H](CCC(O)=O)C(O)=O)N1",
+      "scaffold": "O=c1nc[nH]c2[nH]cc(CCc3ccccc3)c12",
+      "num_test_pos": 1,
+      "num_test_neg": 43
+    },
+    {
+      "new_id": 92,
+      "orig_id": 92,
+      "smiles": "[H][C@@]12N(C)C3=CC(OC)=C(C=C3[C@@]11CCN3CC=C[C@@](CC)([C@@H](OC(C)=O)[C@]2(O)C(=O)OC)[C@@]13[H])[C@]1(C[C@@]2([H])CN(C[C@](O)(CC)C2)CCC2=C1NC1=C2C=CC=C1)C(=O)OC",
+      "scaffold": "C1=CC2CCC3Nc4ccc(C5CC6CCCN(CCc7c5[nH]c5ccccc75)C6)cc4C34CCN(C1)C24",
+      "num_test_pos": 2,
+      "num_test_neg": 66
+    },
+    {
+      "new_id": 93,
+      "orig_id": 93,
+      "smiles": "CN1C=C(CNCC2CCN(CC2)C2=NC=C(C=N2)C(=O)NO)C2=CC=CC=C12",
+      "scaffold": "c1cnc(N2CCC(CNCc3c[nH]c4ccccc34)CC2)nc1",
+      "num_test_pos": 1,
+      "num_test_neg": 52
+    },
+    {
+      "new_id": 97,
+      "orig_id": 97,
+      "smiles": "CN(C1=CC2=NN(C)C(C)=C2C=C1)C1=CC=NC(NC2=CC=C(C)C(=C2)S(N)(=O)=O)=N1",
+      "scaffold": "c1ccc(Nc2nccc(Nc3ccc4c[nH]nc4c3)n2)cc1",
+      "num_test_pos": 1,
+      "num_test_neg": 49
+    },
+    {
+      "new_id": 101,
+      "orig_id": 101,
+      "smiles": "FC1=CC=C(CC2=NNC(=O)C3=CC=CC=C23)C=C1C(=O)N1CCN(CC1)C(=O)C1CC1",
+      "scaffold": "O=C(c1cccc(Cc2n[nH]c(=O)c3ccccc23)c1)N1CCN(C(=O)C2CC2)CC1",
+      "num_test_pos": 1,
+      "num_test_neg": 58
+    }
+  ]
+}
