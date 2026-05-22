@@ -428,12 +428,6 @@ def _select_rows_by_scaffold(pos, drug_smiles, test_ratio, rng):
 
 
 def _split_positive_pairs(pos, split_mode, test_ratio, rng, drug_smiles):
-    if split_mode == "mirna_cold_start":
-        train_pos, test_pos = _select_rows_by_entity(pos, test_ratio=test_ratio, entity_axis=0, rng=rng)
-        return train_pos, test_pos, np.unique(train_pos[:, 0]), np.unique(pos[:, 1])
-    if split_mode == "drug_cold_start":
-        train_pos, test_pos = _select_rows_by_entity(pos, test_ratio=test_ratio, entity_axis=1, rng=rng)
-        return train_pos, test_pos, np.unique(pos[:, 0]), np.unique(train_pos[:, 1])
     if split_mode == "drug_scaffold":
         train_pos, test_pos = _select_rows_by_scaffold(pos, drug_smiles=drug_smiles, test_ratio=test_ratio, rng=rng)
         return train_pos, test_pos, np.unique(pos[:, 0]), np.unique(train_pos[:, 1])
