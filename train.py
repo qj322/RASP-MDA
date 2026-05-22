@@ -95,7 +95,7 @@ def format_metrics(prefix, metric_dict):
 def build_model(args, bundle):
     drug_node_dim = bundle.drug_graphs[0].x.shape[1]
     drug_edge_dim = bundle.drug_graphs[0].edge_attr.shape[1]
-    model = MDAGraphModel(
+    model = RASPMDAModel(
         drug_node_dim=drug_node_dim,
         drug_edge_dim=drug_edge_dim,
         hidden_dim=args.hidden_dim,
